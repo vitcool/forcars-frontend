@@ -1,51 +1,49 @@
 <div *ngFor='let car of cars'>
   <div class="row">
-    <div class="col-lg-6 col-lg-offset-3">
-      <div class="col-lg-6">
-        <img src="{{car.linkToPhoto}}" width="300px" height="200px">
-      </div>
-      <div class="col-lg-6">
-        <table class="table table-striped">
-          <tbody>
-            <tr>
-              <td>Vendor</td>
-              <td>{{car.vendor}}</td>
-            </tr>
-            <tr>
-              <td>Model</td>
-              <td>{{car.model}}</td>
-            </tr>
-            <tr>
-              <td>Year of production</td>
-              <td>{{car.year}}</td>
-            </tr>
-            <tr>
-              <td>V of engine</td>
-              <td>{{car.VEngine}}</td>
-            </tr>
-            <tr>
-              <td>Type of engine</td>
-              <td>{{car.typeOfEngine}}</td>
-            </tr>
-            <tr>
-              <td>Horsepower</td>
-              <td>{{car.horsepower}}</td>
-            </tr>
-            <tr>
-              <td>Color</td>
-              <td>{{car.color}}</td>
-            </tr>
-            <tr>
-              <td>Price</td>
-              <td>{{car.price}}</td>
-            </tr>
-            <tr>
-              <td>Price of custom clearance</td>
-              <td>{{car.priceCustomClearance}}</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+    <div class="col-lg-6">
+      {{car.linkToPhoto}}
+    </div>
+    <div class="col-lg-6">
+      <table class="table table-striped">
+        <tbody>
+          <tr>
+            <td>Vendor</td>
+            <td>{{car.vendor}}</td>
+          </tr>
+          <tr>
+            <td>Model</td>
+            <td>{{car.model}}</td>
+          </tr>
+          <tr>
+            <td>Year of production</td>
+            <td>{{car.year}}</td>
+          </tr>
+          <tr>
+            <td>V of engine</td>
+            <td>{{car.VEngine}}</td>
+          </tr>
+          <tr>
+            <td>Type of engine</td>
+            <td>{{car.typeOfEngine}}</td>
+          </tr>
+          <tr>
+            <td>Horsepower</td>
+            <td>{{car.horsepower}}</td>
+          </tr>
+          <tr>
+            <td>Color</td>
+            <td>{{car.color}}</td>
+          </tr>
+          <tr>
+            <td>Price</td>
+            <td>{{car.price}}</td>
+          </tr>
+          <tr>
+            <td>Price of custom clearance</td>
+            <td>{{car.priceCustomClearance}}</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </div>
 </div>
