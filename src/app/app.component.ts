@@ -1,7 +1,9 @@
 import { Component } from '@angular/core';
+import { CarDataService } from "./car-data.service";
 
 @Component({
   selector: 'app-root',
+  providers: [CarDataService],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
