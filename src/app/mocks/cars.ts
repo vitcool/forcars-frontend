@@ -1,4 +1,4 @@
-import { CarModel } from "../car-model";
+import { CarModel } from "../models/car-model";
 
 export const CARS: CarModel[] = [
   {

@@ -8,6 +8,7 @@ import { CarDetailViewComponent } from './car-detail-view/car-detail-view.compon
 
 import { AlertModule } from 'ngx-bootstrap';
 import { FormatYearPipe } from './pipes/format-year.pipe'
+import { RouterModule }   from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,17 @@ import { FormatYearPipe } from './pipes/format-year.pipe'
   ],
   imports: [
     BrowserModule,
-    AlertModule.forRoot()
+    AlertModule.forRoot(),
+    RouterModule.forRoot([
+      {
+        path: 'cars',
+        component: CarsViewComponent
+      },
+      {
+        path: 'cardetails/:id',
+        component: CarDetailViewComponent
+      },
+    ])
   ],
   providers: [],
   bootstrap: [AppComponent]

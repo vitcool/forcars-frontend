@@ -1,4 +1,4 @@
-<div *ngIf="car">
+<div *ngIf="car" class="alert alert-warning">
   <div class="row">
     <div class="col-md-6">
       <img src="{{car.linkToPhoto}}" width="300px" height="200px">
@@ -45,5 +45,6 @@
         </tbody>
       </table>
     </div>
-  </div>
+    </div>
+    <button type="button" class="btn" (click)="goBack()">To main</button>
 </div>
