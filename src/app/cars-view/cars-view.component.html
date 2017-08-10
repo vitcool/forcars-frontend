@@ -1,50 +1,11 @@
 <div *ngFor='let car of cars'>
-  <div class="row">
-    <div class="col-lg-6">
-      {{car.linkToPhoto}}
+  <div class="row alert alert-info" role="alert">
+    <div class="image col-md-6">      
+      <img src="{{car.linkToPhoto}}">
     </div>
-    <div class="col-lg-6">
-      <table class="table table-striped">
-        <tbody>
-          <tr>
-            <td>Vendor</td>
-            <td>{{car.vendor}}</td>
-          </tr>
-          <tr>
-            <td>Model</td>
-            <td>{{car.model}}</td>
-          </tr>
-          <tr>
-            <td>Year of production</td>
-            <td>{{car.year}}</td>
-          </tr>
-          <tr>
-            <td>V of engine</td>
-            <td>{{car.VEngine}}</td>
-          </tr>
-          <tr>
-            <td>Type of engine</td>
-            <td>{{car.typeOfEngine}}</td>
-          </tr>
-          <tr>
-            <td>Horsepower</td>
-            <td>{{car.horsepower}}</td>
-          </tr>
-          <tr>
-            <td>Color</td>
-            <td>{{car.color}}</td>
-          </tr>
-          <tr>
-            <td>Price</td>
-            <td>{{car.price}}</td>
-          </tr>
-          <tr>
-            <td>Price of custom clearance</td>
-            <td>{{car.priceCustomClearance}}</td>
-          </tr>
-        </tbody>
-      </table>
+    <div class="col-md-6">
+      {{car.vendor}} {{car.model}} {{car.year | formatYear}}
     </div>
   </div>
+  <br>
 </div>
-<br>

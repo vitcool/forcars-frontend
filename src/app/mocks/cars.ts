@@ -12,7 +12,7 @@ export const CARS: CarModel[] = [
     color: "blue",
     price: 7999,
     priceCustomClearance: 2000,
-    linkToPhoto: "assets/images/vw_golf.jpg"
+    linkToPhoto: "/assets/images/vw_golf.jpg"
   },
   {
     id: 2,
@@ -25,7 +25,7 @@ export const CARS: CarModel[] = [
     color: "yellow",
     price: 7549,
     priceCustomClearance: 1850,
-    linkToPhoto: "assets/images/opel_astra.jpg"
+    linkToPhoto: "/assets/images/opel_astra.jpg"
   },
   {
     id: 3,
@@ -38,6 +38,6 @@ export const CARS: CarModel[] = [
     color: "black",
     price: 8749,
     priceCustomClearance: 1750,
-    linkToPhoto: "assets/images/seat_leon.jpg"
+    linkToPhoto: "/assets/images/seat_leon.jpg"
   }
 ];

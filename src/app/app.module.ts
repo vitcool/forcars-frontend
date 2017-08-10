@@ -6,14 +6,19 @@ import { CarsViewComponent } from './cars-view/cars-view.component';
 import { CommonModule } from '@angular/common';
 import { CarDetailViewComponent } from './car-detail-view/car-detail-view.component';
 
+import { AlertModule } from 'ngx-bootstrap';
+import { FormatYearPipe } from './pipes/format-year.pipe'
+
 @NgModule({
   declarations: [
     AppComponent,
     CarsViewComponent,
-    CarDetailViewComponent
+    CarDetailViewComponent,
+    FormatYearPipe
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AlertModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

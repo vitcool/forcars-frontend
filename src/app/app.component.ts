@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { CarDataService } from "./car-data.service";
+import { CarDataService } from "./services/car-data.service";
 
 @Component({
   selector: 'app-root',

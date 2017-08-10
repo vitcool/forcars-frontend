@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
-import { CarModel } from './car-model'
-import { CARS } from './mocks/cars'
+import { CarModel } from '../models/car-model'
+import { CARS } from '../mocks/cars'
 
 @Injectable()
 export class CarDataService {
