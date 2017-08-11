@@ -9,6 +9,10 @@ import { CarDetailViewComponent } from './car-detail-view/car-detail-view.compon
 import { AlertModule } from 'ngx-bootstrap';
 import { FormatYearPipe } from './pipes/format-year.pipe'
 import { RouterModule }   from '@angular/router';
+import { HttpModule }    from '@angular/http';
+
+import { AppRoutingModule }     from './app-routing/app-routing.module';
+import {Component} from "@angular/core";
 
 @NgModule({
   declarations: [
@@ -20,16 +24,7 @@ import { RouterModule }   from '@angular/router';
   imports: [
     BrowserModule,
     AlertModule.forRoot(),
-    RouterModule.forRoot([
-      {
-        path: 'cars',
-        component: CarsViewComponent
-      },
-      {
-        path: 'cardetails/:id',
-        component: CarDetailViewComponent
-      },
-    ])
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
