@@ -10,9 +10,17 @@ import { AlertModule } from 'ngx-bootstrap';
 import { FormatYearPipe } from './pipes/format-year.pipe'
 import { RouterModule }   from '@angular/router';
 import { HttpModule }    from '@angular/http';
+import { FormsModule }   from '@angular/forms';
 
 import { AppRoutingModule }     from './app-routing/app-routing.module';
 import {Component} from "@angular/core";
+
+import { CarDataService } from "./services/car-data.service";
+
+
+// Imports for loading & configuring the in-memory web api
+import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
+import { InMemoryDataService }  from './services/in-memory-data.service';
 
 @NgModule({
   declarations: [
@@ -23,10 +31,13 @@ import {Component} from "@angular/core";
   ],
   imports: [
     BrowserModule,
+    FormsModule,
+    HttpModule,
     AlertModule.forRoot(),
+    InMemoryWebApiModule.forRoot(InMemoryDataService),
     AppRoutingModule
   ],
-  providers: [],
+  providers: [CarDataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
