@@ -1,0 +1,50 @@
+<div class="col-md-3">
+  <ul>
+    <li *ngFor="let car of cars">{{car.vendor}} {{car.model}}</li> 
+  </ul>
+</div>
+<div class="col-md-6">
+  <form>
+    <div class="form-group">
+      <label for="vendor">Vendor</label>
+      <input type="text" class="form-control" id="vendor" placeholder="Please enter vendor">
+    </div>
+    <div class="form-group">
+      <label for="model">Model</label>
+      <input type="text" class="form-control" id="model" placeholder="Please enter model">
+    </div>
+    <div class="form-group">
+      <label for="year">Year</label>
+      <input type="number" class="form-control" id="year" placeholder="Please enter year of production">
+    </div>
+    <div class="form-group">
+      <label for="vengine">V engine</label>
+      <input type="number" class="form-control" id="vengine" placeholder="Please enter V of engine">
+    </div>
+    <div class="form-group">
+      <label for="typeengine">Type of engine</label>
+      <input type="text" class="form-control" id="typeengine" placeholder="Please enter type of engine">
+    </div>
+    <div class="form-group">
+      <label for="horsepower">Horse power</label>
+      <input type="text" class="form-control" id="horsepower" placeholder="Please enter horse power">
+    </div>
+    <div class="form-group">
+      <label for="color">Color</label>
+      <input type="text" class="form-control" id="color" placeholder="Please enter the color of car">
+    </div>
+    <div class="form-group">
+      <label for="price">Price</label>
+      <input type="number" class="form-control" id="price" placeholder="Please enter the price">
+    </div>
+    <div class="form-group">
+      <label for="priceclearance">Price of custom clearance</label>
+      <input type="number" class="form-control" id="priceclearance" placeholder="Please enter the price of car clearance">
+    </div>
+    <div class="form-group">
+      <label for="linkphoto">Link to photo</label>
+      <input type="number" class="form-control" id="linkphoto" placeholder="Please enter the address of photo">
+    </div>
+    <button type="submit" class="btn btn-primary"  (click)="addCar()">Add car</button>
+  </form>
+</div>

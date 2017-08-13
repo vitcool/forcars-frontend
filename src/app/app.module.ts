@@ -21,13 +21,15 @@ import { CarDataService } from "./services/car-data.service";
 // Imports for loading & configuring the in-memory web api
 import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService }  from './services/in-memory-data.service';
+import { AddNewCarComponent } from './add-new-car/add-new-car.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CarsViewComponent,
     CarDetailViewComponent,
-    FormatYearPipe
+    FormatYearPipe,
+    AddNewCarComponent
   ],
   imports: [
     BrowserModule,

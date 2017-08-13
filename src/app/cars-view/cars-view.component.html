@@ -1,20 +1,25 @@
-<div *ngFor='let car of cars'>
-  <div class="row alert alert-info" role="alert">
-    <div class="image col-md-6">      
-      <img src="{{car.linkToPhoto}}">
-    </div>
-    <div class="col-md-6">
-      <div class='row'>
-        <div class="col-md-6 col-md-offset-4">
-      {{car.vendor}} {{car.model}} {{car.year | formatYear}}
+<div class="col-md-3">
+  <button type="button" class="btn btn-default btn-md" [routerLink]="['/new']">Add new car</button>
+</div>
+<div class="col-md-6">
+  <div *ngFor='let car of cars'>
+    <div class="row alert alert-info" role="alert">
+      <div class="image col-md-6">
+        <img src="{{car.linkToPhoto}}">
       </div>
-      </div>
-      <div class='row row-view-info-button'>
-        <div class="col-md-1 col-md-offset-8">
-          <button type="button" class="btn btn-default btn-md" [routerLink]="['/cardetails', car.id]">Read more</button>
+      <div class="col-md-6">
+        <div class='row'>
+          <div class="col-md-6 col-md-offset-4">
+            {{car.vendor}} {{car.model}} {{car.year | formatYear}}
+          </div>
+        </div>
+        <div class='row row-view-info-button'>
+          <div class="col-md-1 col-md-offset-8">
+            <button type="button" class="btn btn-default btn-md" [routerLink]="['/cardetails', car.id]">Read more</button>
+          </div>
         </div>
       </div>
     </div>
+    <br>
   </div>
-  <br>
-</div>  
+</div>
